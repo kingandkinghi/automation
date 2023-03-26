@@ -1,11 +1,14 @@
 {
 	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../shell"
-		}
-	],
+        {
+            "path": "."
+        },
+        {
+            "path": "../shell"
+        },
+        {
+            "path": "../cli"
+        }
+    ],
     "settings": {}
 }
