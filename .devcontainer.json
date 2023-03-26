@@ -1,4 +1,5 @@
 {
+    "postCreateCommand": "bash .clone-repos.sh",
     "customizations": {
         "codespaces": {
             "repositories": {
