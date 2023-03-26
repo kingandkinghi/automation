@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# https://github.com/codespaces-contrib/codespaces-multi-repo
 script_folder="$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)"
 workspaces_folder="$(cd "${script_folder}/.." && pwd)"
 
@@ -12,8 +14,8 @@ clone-repo()
     fi
 }
 
-if [ -f "${script_folder}/repos-to-clone.list" ]; then
+if [ -f "${script_folder}/.repos-to-clone.list" ]; then
     while IFS= read -r repository; do
         clone-repo "$repository"
-    done < "${script_folder}/repos-to-clone.list"
+    done < "${script_folder}/.repos-to-clone.list"
 fi
