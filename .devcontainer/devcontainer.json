@@ -1,10 +1,24 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.238.1/containers/ubuntu
 {
-	"name": "Ubuntu",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
+    "customizations": {
+        "codespaces": {
+            "repositories": {
+                "kingandkingesq/cli": {
+                    "permissions": "write-all"
+                },
+                "kingandkingesq/shell": {
+                    "permissions": "write-all"
+                }
+            }
+        }
+    },
+    "postCreateCommand": "bash .clone-repos.sh",
+
+    "name": "Ubuntu",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     
     "features": {
         "docker-in-docker": {
