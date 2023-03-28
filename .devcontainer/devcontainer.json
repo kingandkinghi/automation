@@ -4,10 +4,10 @@
     "customizations": {
         "codespaces": {
             "repositories": {
-                "kingandkingesq/cli": {
+                "kingandkinghi/cli": {
                     "permissions": "write-all"
                 },
-                "kingandkingesq/shell": {
+                "kingandkinghi/shell": {
                     "permissions": "write-all"
                 }
             }
